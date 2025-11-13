@@ -1,0 +1,45 @@
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Ignore Virtual Environments
+venv/
+env/
+.venv/
+
+# ---------------------------
+# Arduino
+# ---------------------------
+*.hex
+*.elf
+*.bin
+
+# ---------------------------
+# OS generated files
+# ---------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# IDE settings (VS Code)
+# ---------------------------
+.vscode/
+
+# ---------------------------
+# PyInstaller / packaging
+# ---------------------------
+*.spec
+
+# ---------------------------
+# Keep parking logs (allow CSV)
+# ---------------------------
+!parking_log.csv
