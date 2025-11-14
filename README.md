@@ -221,7 +221,7 @@ This project is licensed under the **MIT License** - see [LICENSE](LICENSE) for 
 
 - [@Ramesh-0](https://www.github.com/Ramesh-0)
 - [@Aditi-sharma01](https://www.github.com/Aditi-sharma01)
-- [@AkshitaYadav]()
+- [@Akshitayadav01](https://github.com/Akshitayadav01)
 
 ## Support
 
