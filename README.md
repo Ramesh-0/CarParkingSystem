@@ -1,8 +1,15 @@
+
 # 🚗 Car Parking System
 
 An advanced automated parking management system that detects vehicle entry/exit, recognizes license plates using OCR, calculates parking charges in real-time, and provides a modern GUI for management.
 
+
+
 ## Features
+
+
+
+
 
 - **🚙 Vehicle Detection**: IR sensors detect car entry and exit
 - **📸 License Plate Recognition**: Automatic OCR-based plate detection
@@ -11,7 +18,20 @@ An advanced automated parking management system that detects vehicle entry/exit,
 - **📊 Live Dashboard**: Modern GUI with real-time video feed and logs
 - **📝 Parking Logs**: CSV-based transaction history
 
-## System Architecture
+
+## Demo
+
+https://github.com/user-attachments/assets/37584001-51b9-45f0-a8fa-c082290541be
+
+
+##  System Architecture
+
+
+
+![circuitDiagram](https://github.com/user-attachments/assets/debf0d5f-0781-4251-9eb5-c77924226e93)
+
+
+
 
 ### Hardware Components
 - **Arduino Microcontroller**: Controls gate, sensors, and LCD display
@@ -19,15 +39,12 @@ An advanced automated parking management system that detects vehicle entry/exit,
 - **Servo Motor**: Controls parking gate
 - **20x4 LCD Display**: Shows parking status and slot information
 - **USB Webcam**: Captures license plate images
-
 ### Software Stack
 - **Backend**: Python with OpenCV, EasyOCR, PySerial
 - **GUI**: Tkinter with modern dark theme
 - **Firmware**: Arduino C++ (servo control, IR sensor reading)
 - **Logging**: CSV-based transaction records
-
 ## Prerequisites
-
 ### System Requirements
 - Windows/Linux/macOS with Python 3.8+
 - Arduino board (Uno/Mega recommended)
@@ -47,8 +64,7 @@ pip install pandas
 - `Servo.h` (built-in)
 - `Wire.h` (built-in)
 - `LiquidCrystal_I2C.h` (install via Arduino IDE)
-
-## Installation & Setup
+## Installation
 
 ### 1. Clone/Download the Repository
 ```bash
@@ -62,10 +78,10 @@ pip install -r requirements.txt
 ```
 
 ### 3. Upload Arduino Firmware
-1. Open [arduino_code.ino](arduino_code.ino) in Arduino IDE
-2. Select your board type and COM port
-3. Click **Upload**
-4. Verify serial output shows initialization
+    1. Open [arduino_code.ino](arduino_code.ino) in Arduino IDE
+    2. Select your board type and COM port
+    3. Click **Upload**
+    4. Verify serial output shows initialization
 
 ### 4. Configure ROI (Region of Interest) for License Plate
 Before running, you need to define the area where license plates appear in your camera feed:
@@ -117,7 +133,6 @@ python -m serial.tools.list_ports
 ```
 
 ## File Structure
-
 ```
 CarParkingSystem/
 ├── main.py                          # Entry point - starts system & GUI
@@ -143,7 +158,6 @@ CarParkingSystem/
 ```
 
 ## Usage Workflow
-
 ### 1. Vehicle Entry
 - Car triggers IR entry sensor
 - Gate opens (servo rotates)
@@ -170,9 +184,7 @@ The Tkinter GUI displays:
 - **Parking Status**: Available/occupied slots
 - **Recent Logs**: Table of recent transactions with entry/exit times and charges
 - **Manual Capture**: Button for manual plate recognition
-
 ## Troubleshooting
-
 | Issue | Solution |
 |-------|----------|
 | Camera not detected | Check camera index in code (default: 1), close other camera apps |
@@ -182,7 +194,6 @@ The Tkinter GUI displays:
 | Gate not opening | Verify servo motor connection, check Arduino power |
 
 ## Configuration
-
 ### Modify Pricing
 Edit [parking_system/core.py](parking_system/core.py):
 ```python
@@ -201,19 +212,22 @@ system = ParkingSystem(serial_port="COM4", ...)
 
 ### Modify LCD Display Messages
 Edit [arduino_code.ino](arduino_code.ino) and upload to Arduino
-
 ## License
 
 This project is licensed under the **MIT License** - see [LICENSE](LICENSE) for details.
 
-## Author
 
-**Ramesh Kumar Singh** (2025)
+## Authors
 
-## Support & Contribution
+- [@Ramesh-0](https://www.github.com/Ramesh-0)
+- [@Aditi-sharma01](https://www.github.com/Aditi-sharma01)
+- [@AkshitaYadav]()
+
+## Support
 
 For issues, feature requests, or contributions, please open an issue or pull request on the repository.
 
 ---
 
 **Last Updated**: November 2025
+
